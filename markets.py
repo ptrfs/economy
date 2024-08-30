@@ -75,6 +75,8 @@ class BondMarketBuyer:
                 pass
             case 3:
                 self.sell(action.repay_amt, action.bond_price)
+            case _:
+                pass
 
     async def listen_and_respond(self, bond_market: BondMarket):
         """ Listen and respond to action """
